@@ -1,2 +1,2 @@
 # Gitcourse
-this is a read file of g9
+this is a read file of github
