@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure</title>
+    <link rel="stylesheet" href="booknow.css">
+    <style>
+        #booking-form {
+            margin-top: 80px; /* Adjust the space between the header and form */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-logo">
+            <img src="logo1.jpj.jpg" alt="AdventureSwap Logo">
+        </div>
+        <nav class="header-list">
+            <div class="header-list-nav">
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a class="active" href="booknow.html">Book Now</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="booking-form" class="booking-form">
+        <h2>Book Your Adventure</h2>
+        <form action="/submit-booking" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="adventure-package">Select Adventure Package</label>
+            <select id="adventure-package" name="adventure-package" required>
+                <option value="mountain-trekking">Mountain Trekking - 3 days, 2 nights. Price: $500</option>
+                <option value="beach-getaway">Beach Getaway - 5 days, all-inclusive. Price: $800</option>
+                <option value="safari-adventure">Safari Adventure - 4 days, all-inclusive. Price: $1200</option>
+                <option value="island-hopping">Island Hopping - 7 days, all-inclusive. Price: $1500</option>
+            </select>
+
+            <label for="people">Number of People</label>
+            <input type="number" id="people" name="people" min="1" required>
+
+            <label for="date">Select Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="cta-btn">Book Now</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 Travel All Rights Reserved</p>
+    </footer>
+</body>
+</html>
